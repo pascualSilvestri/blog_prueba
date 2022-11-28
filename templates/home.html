@@ -1,13 +1,59 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static 'css/header/header.css' %}">
     <title>Pasucal silvestri</title>
-</head>
-<body>
-    <h1>Soy titulo</h1>
-    
-</body>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="li_nav">
+          <a
+            href="{% url 'pag1' %}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="a_nav"
+            >Pag1</a
+          >
+        </li>
+        <li class="li_nav">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="a_nav"
+            >Pag2</a
+          >
+        </li>
+        <li class="li_nav">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="a_nav"
+            >Pag3</a
+          >
+        </li>
+        <li class="li_nav">
+          <a
+            href="http://"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="a_nav"
+            >Pag4</a
+          >
+        </li>
+      </ul>
+    </nav>
+    {% block content %}{% endblock %}
+    <header>
+        <h1>soy yo de nuevo</h1>
+    </header>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
 </html>

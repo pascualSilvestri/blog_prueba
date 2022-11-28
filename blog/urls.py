@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     path('',views.Home, name = 'home'),
+    
+    path('pag1/',views.Pag1, name = 'pag1'),
 ]
